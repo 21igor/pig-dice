@@ -79,7 +79,14 @@ $(function(){
       // total = 0;
       var dice = getRandom(1, 6);
 
-      $("#dice-value").text(dice);
+      $(".gif").hide();
+      $(".diceImage").hide();
+      imgSelector = $("#dice-img")
+      var imgPath = "img/"
+      imgSelector.attr("src",imgPath + "Dice-"+dice+".png");
+      $(".diceImage").fadeIn(1000).show();
+
+
       if (dice !== 1){
         total +=dice;
         $("#total-span").text(total);

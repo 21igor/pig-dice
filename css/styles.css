@@ -14,7 +14,7 @@
 }
 
 .play-row{
-  text-align: center;
+  height: 150px;
 }
 
 .game-col{
@@ -22,11 +22,13 @@
 }
 
 .active{
-  border: 2px solid black
+  border: 2px solid black;
+  background: #5cb85c;
 }
 
 .passive{
   border: none;
+
 }
 
 #total {
@@ -67,4 +69,12 @@ h1 {
 
 .formLayout {
   width: 200px;
+}
+
+img {
+  height: 70px;
+}
+
+.row-height-100 {
+  height: 100px;
 }
