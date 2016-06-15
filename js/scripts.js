@@ -96,7 +96,7 @@ $(function(){
           resetGame();
         }else if (player2.turn && player2.checkWin(total)) {
           player2.score += total;
-          alert (player2.name + " has won!!<br> score: " + player2.score);
+          alert (player2.name + " has won!!\nScore: " + player2.score);
           resetGame()
         }
       }else {
