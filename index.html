@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pig Dice</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-2.2.4.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Pig Dice</h1>
+      </header>
+      <div id="startSetup" class="formLayout container-1 centerize">
+        <label for="player1">Player 1</label>
+        <input type="text" id="player1" class="form-control" placeholder="Enter your name">
+        <label for="player2">Player 2</label>
+        <input type="text" id="player2" class="form-control" placeholder="Enter your name"><br>
+        <span class="btn btn-default btn-center" id="add">Play!</span>
+      </div>
+      <div class="container-1 centerize">
+        <div class="block game-col container-1 centerize">
+          <div class="row score-row row-centered">
+            <div class="col-sm-4 col-centered score1" id="score1">
+              <h4 id="p1-score"></h4>
+              <span id="score1-span"></span>
+            </div>
+            <div class="col-sm-4 col-centered total" id="total">
+              <h4>Total</h4>
+              <span id="total-span"></span>
+            </div>
+            <div class="col-sm-4 col-centered score2" id="score2">
+              <h4 id="p2-score"></h4>
+              <span id="score2-span"></span>
+            </div>
+          </div>
+          <div class="row play-row">
+            <div class="">
+              <h3>Dice:</h3>
+              <img src="img/04dice.gif" border="0">
+              <div><span id="dice-value"></span></div>
+            </div>
+            <div class="">
+              <span class="btn btn-success" id="roll">Roll</span>
+              <span class="btn btn-danger" id="hold">Hold</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end container -->
+  </body>
+</html>
